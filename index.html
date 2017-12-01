@@ -92,6 +92,7 @@
        document.getElementById('root2').innerHTML = second[Math.round(Math.random()*5)];
        document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
        document.getElementById('root4').innerHTML = second[Math.round(Math.random()*5)];
+         }
 
   document.body.onkeyup = function(e){
          if(e.keyCode == 32){
@@ -101,7 +102,13 @@
            document.getElementById('root4').innerHTML = second[Math.round(Math.random()*5)];
          }
      }
-  }
+
+     document.body.addEventListener('touchstart', function(a){
+       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
+       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*5)];
+       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
+       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*5)];
+     }, false)
   </script>
 </body>
 </html>
