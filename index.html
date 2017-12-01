@@ -72,6 +72,7 @@
   first[5] = "Usability";
   first[6] = "Business";
   first[7] = "Interface";
+  first[8] = "Product";
 
   var second = new Array();
   second[0] = "Designer";
@@ -81,15 +82,15 @@
   second[4] = "Tester";
   second[5] = "Specialist";
 
-  document.getElementById('root1').innerHTML = first[Math.round(Math.random()*7)];
+  document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
   document.getElementById('root2').innerHTML = second[Math.round(Math.random()*5)];
-  document.getElementById('root3').innerHTML = first[Math.round(Math.random()*7)];
+  document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
   document.getElementById('root4').innerHTML = second[Math.round(Math.random()*5)];
 
   document.body.onclick = function() {
-       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*7)];
+       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
        document.getElementById('root2').innerHTML = second[Math.round(Math.random()*5)];
-       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*7)];
+       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
        document.getElementById('root4').innerHTML = second[Math.round(Math.random()*5)];
 
   document.body.onkeyup = function(e){
