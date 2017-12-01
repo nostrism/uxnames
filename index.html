@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UXNAMES</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style type="text/css">
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    background: #0F1450;
+    background: linear-gradient(to top, #0A0F32, #0F1450) no-repeat;
+  }
+  .content {
+    text-align: center;
+  }
+
+  span {
+    font-size: 72px;
+    color: rgba(255, 30, 70, 1)
+  }
+  .hint {
+    font-size: 18px;
+    color: rgba(255, 30, 70, 0.48)
+  }
+  .hint strong {
+    color: rgba(255, 30, 70, 0.64)
+  }
+  .titry {
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    color: rgba(255, 30, 70, 0.56)
+  }
+
+  .titry span {
+    font-size: 15px;
+    color: rgba(255, 30, 70, 0.56)
+  }
+  </style>
+</head>
+<body>
+  <div class="content">
+  <span id="root1"></span><span> </span><span id="root2"></span></br>
+  <span class="hint">Чтобы подобрать название <strong>кликни по странице</strong> или нажми <strong>пробел</strong></span>
+  </div>
+  <div class="titry">&copy; Сделал Сергей Кривой, <span id="root3"></span><span> </span><span id="root4"></span></div>
+  <script>
+  var first = new Array();
+  first[0] = "UX";
+  first[1] = "UI";
+  first[2] = "UX/UI";
+  first[3] = "UI/UX";
+  first[4] = "Information";
+  first[5] = "Usability";
+  first[6] = "Business";
+  first[7] = "Interface";
+
+  var second = new Array();
+  second[0] = "Designer";
+  second[1] = "Researcher";
+  second[2] = "Achitect";
+  second[3] = "Analitics";
+  second[4] = "Tester";
+
+  document.getElementById('root1').innerHTML = first[Math.round(Math.random()*7)];
+  document.getElementById('root2').innerHTML = second[Math.round(Math.random()*4)];
+  document.getElementById('root3').innerHTML = first[Math.round(Math.random()*7)];
+  document.getElementById('root4').innerHTML = second[Math.round(Math.random()*4)];
+
+  document.body.onclick = function() {
+       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*7)];
+       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*4)];
+       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*7)];
+       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*4)];
+
+  document.body.onkeyup = function(e){
+         if(e.keyCode == 32){
+           document.getElementById('root1').innerHTML = first[Math.round(Math.random()*7)];
+           document.getElementById('root2').innerHTML = second[Math.round(Math.random()*4)];
+           document.getElementById('root3').innerHTML = first[Math.round(Math.random()*7)];
+           document.getElementById('root4').innerHTML = second[Math.round(Math.random()*4)];
+         }
+     }
+  }
+  </script>
+</body>
+</html>
