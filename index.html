@@ -64,9 +64,9 @@
 <body>
   <div class="content">
   <span id="root1"></span><span> </span><span id="root2"></span></br>
-  <span class="hint">Чтобы подобрать название <strong>кликни по странице</strong> или нажми <strong>пробел</strong></span>
+  <span class="hint">To select a namme <strong>touch the page</strong> or press <strong>spacebar</strong></span>
   </div>
-  <div class="titry">&copy; Сделал Сергей Кривой, <span id="root3"></span><span> </span><span id="root4"></span></div>
+  <div class="titry">&copy; Developed by Sergey Krivoy, <span id="root3"></span><span> </span><span id="root4"></span></div>
   <script>
   var first = new Array();
   first[0] = "UX";
@@ -78,6 +78,8 @@
   first[6] = "Business";
   first[7] = "Interface";
   first[8] = "Product";
+  first[9] = "Graphic";
+  first[10] = "Emotion";
 
   var second = new Array();
   second[0] = "Designer";
@@ -87,33 +89,34 @@
   second[4] = "Tester";
   second[5] = "Specialist";
   second[6] = "Lead";
+  second[7] = "Artist";
 
-  document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
-  document.getElementById('root2').innerHTML = second[Math.round(Math.random()*6)];
-  document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
-  document.getElementById('root4').innerHTML = second[Math.round(Math.random()*6)];
+  document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
+  document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+  document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
+  document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
 
   document.body.onclick = function() {
-       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
-       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*6)];
-       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
-       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*6)];
+       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
+       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
+       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
          }
 
   document.body.onkeyup = function(e){
          if(e.keyCode == 32){
-           document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
-           document.getElementById('root2').innerHTML = second[Math.round(Math.random()*6)];
-           document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
-           document.getElementById('root4').innerHTML = second[Math.round(Math.random()*6)];
+           document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
+           document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+           document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
+           document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
          }
      }
 
      document.body.addEventListener('touchstart', function(a){
-       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*8)];
-       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*6)];
-       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*8)];
-       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*6)];
+       document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
+       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+       document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
+       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
      }, false)
   </script>
 </body>
