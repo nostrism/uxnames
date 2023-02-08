@@ -99,25 +99,26 @@
   second[5] = "Specialist";
   second[6] = "Lead";
   second[7] = "Artist";
+  second[8] = "Manager";
 
   document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
-  document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+  document.getElementById('root2').innerHTML = second[Math.round(Math.random()*8)];
   document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
-  document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
+  document.getElementById('root4').innerHTML = second[Math.round(Math.random()*8)];
 
   document.body.onclick = function() {
        document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
-       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+       document.getElementById('root2').innerHTML = second[Math.round(Math.random()*8)];
        document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
-       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
+       document.getElementById('root4').innerHTML = second[Math.round(Math.random()*8)];
          }
 
   document.body.onkeyup = function(e){
          if(e.keyCode == 32){
            document.getElementById('root1').innerHTML = first[Math.round(Math.random()*10)];
-           document.getElementById('root2').innerHTML = second[Math.round(Math.random()*7)];
+           document.getElementById('root2').innerHTML = second[Math.round(Math.random()*8)];
            document.getElementById('root3').innerHTML = first[Math.round(Math.random()*10)];
-           document.getElementById('root4').innerHTML = second[Math.round(Math.random()*7)];
+           document.getElementById('root4').innerHTML = second[Math.round(Math.random()*8)];
          }
      }
 /*
